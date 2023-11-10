@@ -1,0 +1,1 @@
+export const formatImgUrl = (url) => `${process.env.REACT_APP_IMAGE}${url}`;

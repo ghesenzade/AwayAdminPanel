@@ -1,0 +1,82 @@
+.productDetails {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    .container {
+        @media(max-width:1100px){
+            width: 100%;
+        }
+        .row {
+            gap: 50px;
+            @media(max-width:1100px){
+                flex-direction: column;
+            }
+            .leftPart {
+                width: 60%;
+                @media(max-width:1100px){
+                    width: 100%;
+                }
+                .productImage {
+                    cursor: pointer;
+                    width: 100%;
+                    height: 85vh;
+                    @media(max-width:1000px){
+                        height: 70vh;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: bottom;
+                    }
+                }
+            }
+            .rightPart {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: auto 0;
+                cursor: pointer;
+                @media(max-width:1100px){
+                    width: 100%;
+                    padding: 0 20px;
+                }
+                .productTitle {
+                    color: rgb(18, 48, 38);
+                    font-size: 40px;
+                    padding-bottom: 50px;
+                }
+                p {
+                    color: rgb(18, 48, 38);
+                    letter-spacing: 1px;
+                    font-size: 20px;
+                    opacity: 90%;
+                    padding-bottom: 10px;
+                }
+                .edit {
+                    background-color: rgb(17, 133, 236);
+                    color: #fff;
+                }
+                .btn {
+                    background-color: rgb(17, 133, 236);
+                    color: #fff;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    border: none;
+                    transition: .3s ease all;
+                    &:hover{
+                        background-color: rgb(7, 114, 208);
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,84 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    .form {
+      width: 30%;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .formControl {
+        margin-bottom: 20px;
+        label {
+          font-weight: bold;
+          display: block;
+          width: 100%;
+        }
+        input{
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-top: 10px;
+        }
+        img {
+          margin-top: 10px;
+        }
+        .error{
+          padding-top: 5px;
+          color: rgb(235, 6, 6);
+        }
+      }
+      .previewImage{
+        padding-bottom: 30px;
+        width: 100%;
+        height: 500px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .btns {
+        display: flex;
+        justify-content: space-between;
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          border: none;
+          border-radius: 5px;
+        }
+        .secondary {
+          background-color: #ccc;
+          transition: background-color 0.2s;
+          .cancel{
+            color: #333;
+          }
+          &:hover{
+            background-color: #0a68cd;
+            .cancel{
+              color: #fff;
+            }
+          }
+        }
+        .primary {
+          background-color: #007bff;
+          color: #fff;
+          transition: .3s ease all;
+          &:hover {
+            background-color: #0a68cd;
+          }
+        }
+      }
+    }
+}
+
+  

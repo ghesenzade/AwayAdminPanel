@@ -1,0 +1,11 @@
+//Global style
+@import "./base";
+
+//Components
+@import "./components/header";
+@import "./components/productCard";
+
+//Pages
+@import "./pages/home";
+@import "./pages//create";
+@import "./pages/productDetails";
